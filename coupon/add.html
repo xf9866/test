@@ -22,38 +22,58 @@
         <form class="layui-form">
             <div class="layui-form-item">
                 <label for="username" class="layui-form-label">
-                    <span class="x-red">*</span>选择城市
+                    <span class="x-red">*</span>优惠券名称
                 </label>
                 <div class="layui-input-inline">
-                    <select name="city" lay-verify="required">
-                        <option value="0">北京</option>
-                        <option value="1">上海</option>
-                    </select>
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label for="username" class="layui-form-label">
-                    <span class="x-red">*</span>选择区域
-                </label>
-                <div class="layui-input-inline">
-                    <select name="city" lay-verify="required">
-                        <option value="0">大兴区</option>
-                        <option value="1">朝阳区</option>
-                    </select>
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label for="username" class="layui-form-label">
-                    <span class="x-red">*</span>场馆名称
-                </label>
-                <div class="layui-input-inline">
-                    <input type="text" id="username" name="username" placeholder="请输入场馆名称" required="" lay-verify="required"
+                    <input type="text" id="username" name="username" placeholder="请输入优惠券名称" required="" lay-verify="required"
                            autocomplete="off" class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">
                 <label for="username" class="layui-form-label">
-                    <span class="x-red">*</span>启用时间
+                    <span class="x-red">*</span>优惠券类型
+                </label>
+                <div class="layui-input-inline">
+                    <select name="quan" id="quan" lay-verify="required">
+                        <option value="注册赠券">注册赠券</option>
+                        <option value="购课赠券">购课赠券</option>
+                        <option value="单独赠券">单独赠券</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item" style="display: none;" id="class_select">
+                <label for="username" class="layui-form-label">
+                    <span class="x-red">*</span>前置课程选择
+                </label>
+                <div class="layui-input-inline">
+                    <select name="class_select" lay-verify="required">
+                        <option value="0">篮球之王体验课</option>
+                        <option value="0">篮球之王体验课</option>
+                        <option value="0">篮球之王体验课</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="username" class="layui-form-label">
+                    <span class="x-red">*</span>使用门槛
+                </label>
+                <div class="layui-input-inline">
+                    <input type="text" id="address" name="address" placeholder="请输入使用门槛" required="" lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="username" class="layui-form-label">
+                    <span class="x-red">*</span>优惠券面值
+                </label>
+                <div class="layui-input-inline">
+                    <input type="text" id="address" name="address" placeholder="请输入优惠券面值" required="" lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="username" class="layui-form-label">
+                    <span class="x-red">*</span>使用期限
                 </label>
                 <div class="layui-input-inline">
                     <input class="layui-input" placeholder="启用时间" name="start" id="start">
@@ -61,7 +81,7 @@
             </div>
             <div class="layui-form-item">
                 <label for="username" class="layui-form-label">
-                    <span class="x-red">*</span>到期时间
+                    <span class="x-red">*</span>使用期限
                 </label>
                 <div class="layui-input-inline">
                     <input class="layui-input" placeholder="到期时间" name="end" id="start">
@@ -69,27 +89,18 @@
             </div>
             <div class="layui-form-item">
                 <label for="username" class="layui-form-label">
-                    <span class="x-red">*</span>场馆地址
-                </label>
-                <div class="layui-input-inline">
-                    <input type="text" id="address" name="address" placeholder="请输入场馆地址" required="" lay-verify="required"
-                           autocomplete="off" class="layui-input">
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label for="username" class="layui-form-label">
-                    <span class="x-red">*</span>是否首页推荐
+                    <span class="x-red">*</span>优惠券状态
                 </label>
                 <div class="layui-input-inline">
                     <select name="city" lay-verify="required">
-                        <option value="0">是</option>
-                        <option value="1">否</option>
+                        <option value="0">有效</option>
+                        <option value="1">无效</option>
                     </select>
                 </div>
             </div>
             <div class="layui-form-item">
                 <label for="username" class="layui-form-label">
-                    <span class="x-red">*</span>推荐序号
+                    <span class="x-red">*</span>领取数量
                 </label>
                 <div class="layui-input-inline">
                     <select name="city" lay-verify="required">
@@ -102,80 +113,66 @@
             </div>
             <div class="layui-form-item">
                 <label for="username" class="layui-form-label">
-                    <span class="x-red">*</span>场馆联系人
+                    <span class="x-red">*</span>可用课程
                 </label>
                 <div class="layui-input-inline">
-                    <input type="text" id="age" name="age" placeholder="请输入场馆联系人" required="" lay-verify="required"
-                           autocomplete="off" class="layui-input">
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label for="phone" class="layui-form-label">
-                    <span class="x-red">*</span>联系电话
-                </label>
-                <div class="layui-input-inline">
-                    <input type="text" id="phone" name="phone" placeholder="请输入联系电话" required="" lay-verify="phone"
-                           autocomplete="off" class="layui-input">
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label for="username" class="layui-form-label">
-                    <span class="x-red">*</span>场馆简介
-                </label>
-                <div class="layui-input-block">
-                    <textarea id="content" name="content" placeholder="请输入备注信息" required="" lay-verify="required" class="layui-textarea"></textarea>
+                    <select name="city" lay-verify="required">
+                        <option value="0">通用</option>
+                    </select>
                 </div>
             </div>
             <div class="layui-form-item">
                 <label for="L_repass" class="layui-form-label">
                 </label>
                 <button  class="layui-btn" lay-filter="add" lay-submit="">
-                    修改
+                    提交
                 </button>
             </div>
         </form>
     </div>
 </div>
-<script>layui.use(['form', 'layer'],
-    function() {
-        $ = layui.jquery;
-        var form = layui.form,
-            layer = layui.layer;
+<script>
+    layui.use(['form', 'layer'],
+        function() {
+            $ = layui.jquery;
+            var form = layui.form,
+                layer = layui.layer;
 
-        //自定义验证规则
-        form.verify({
-            nikename: function(value) {
-                if (value.length < 5) {
-                    return '昵称至少得5个字符啊';
+            //自定义验证规则
+            form.verify({
+                nikename: function(value) {
+                    if (value.length < 5) {
+                        return '昵称至少得5个字符啊';
+                    }
+                },
+                pass: [/(.+){6,12}$/, '密码必须6到12位'],
+                repass: function(value) {
+                    if ($('#L_pass').val() != $('#L_repass').val()) {
+                        return '两次密码不一致';
+                    }
                 }
-            },
-            pass: [/(.+){6,12}$/, '密码必须6到12位'],
-            repass: function(value) {
-                if ($('#L_pass').val() != $('#L_repass').val()) {
-                    return '两次密码不一致';
-                }
-            }
-        });
-
-        //监听提交
-        form.on('submit(add)',
-            function(data) {
-                console.log(data);
-                //发异步，把数据提交给php
-                layer.alert("增加成功", {
-                        icon: 6
-                    },
-                    function() {
-                        //关闭当前frame
-                        xadmin.close();
-
-                        // 可以对父窗口进行刷新
-                        xadmin.father_reload();
-                    });
-                return false;
             });
 
-    });</script>
+            //监听提交
+            form.on('submit(add)',
+                function(data) {
+                    console.log(data);
+                    //发异步，把数据提交给php
+                    layer.alert("增加成功", {
+                            icon: 6
+                        },
+                        function() {
+                            //关闭当前frame
+                            xadmin.close();
+
+                            // 可以对父窗口进行刷新
+                            xadmin.father_reload();
+                        });
+                    return false;
+                });
+
+        });
+</script>
 <script>var _hmt = _hmt || []; (function() {
     var hm = document.createElement("script");
     hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";

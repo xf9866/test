@@ -6,10 +6,10 @@
         <meta name="renderer" content="webkit">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
-        <link rel="stylesheet" href="../../css/font.css">
-        <link rel="stylesheet" href="../../css/xadmin.css">
-        <script type="text/javascript" src="../../lib/layui/layui.js" charset="utf-8"></script>
-        <script type="text/javascript" src="../../js/xadmin.js"></script>
+        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" href="../css/xadmin.css">
+        <script type="text/javascript" src="../lib/layui/layui.js" charset="utf-8"></script>
+        <script type="text/javascript" src="../js/xadmin.js"></script>
         <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
         <!--[if lt IE 9]>
             <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
@@ -22,96 +22,108 @@
             <form class="layui-form">
                 <div class="layui-form-item">
                     <label for="username" class="layui-form-label">
-                        客户来源
-                    </label>
-                    <div class="layui-input-inline">
-                        线下
-                    </div>
-                </div>
-                <div class="layui-form-item">
-                        <label for="username" class="layui-form-label">
-                            <span class="x-red">*</span>家长姓名
-                        </label>
-                        <div class="layui-input-inline">
-                            <input type="text" id="username" name="username" placeholder="请输入家长姓名" required="" lay-verify="required"
-                                autocomplete="off" class="layui-input">
-                        </div>
-                </div>
-                <div class="layui-form-item">
-                        <label for="username" class="layui-form-label">
-                            <span class="x-red">*</span>学员姓名
-                        </label>
-                        <div class="layui-input-inline">
-                            <input type="text" id="username" name="username" placeholder="请输入学员姓名" required="" lay-verify="required"
-                                autocomplete="off" class="layui-input">
-                        </div>
-                </div>
-                <div class="layui-form-item">
-                    <label for="username" class="layui-form-label">
-                        <span class="x-red">*</span>学员性别
+                        <span class="x-red">*</span>选择城市
                     </label>
                     <div class="layui-input-inline">
                         <select name="city" lay-verify="required">
-                            <option value="0">男</option>
-                            <option value="1">女</option>
+                            <option value="0">北京</option>
+                            <option value="1">上海</option>
                         </select>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label for="username" class="layui-form-label">
-                        <span class="x-red">*</span>学员年龄
+                        <span class="x-red">*</span>选择区域
                     </label>
                     <div class="layui-input-inline">
-                        <input type="age" id="age" name="age" placeholder="请输入学员年龄" required="" lay-verify="required"
-                               autocomplete="off" class="layui-input">
+                        <select name="city" lay-verify="required">
+                            <option value="0">大兴区</option>
+                            <option value="1">朝阳区</option>
+                        </select>
                     </div>
                 </div>
                 <div class="layui-form-item">
                         <label for="username" class="layui-form-label">
-                            <span class="x-red">*</span>学员生日
+                            <span class="x-red">*</span>场馆名称
                         </label>
                         <div class="layui-input-inline">
-                                <input class="layui-input" placeholder="注册时间：开始" name="start" id="start">
+                            <input type="text" id="username" name="username" placeholder="请输入场馆名称" required="" lay-verify="required"
+                                autocomplete="off" class="layui-input">
                         </div>
                 </div>
-
+                <div class="layui-form-item">
+                    <label for="username" class="layui-form-label">
+                        <span class="x-red">*</span>启用时间
+                    </label>
+                    <div class="layui-input-inline">
+                        <input class="layui-input" placeholder="启用时间" name="start" id="start">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label for="username" class="layui-form-label">
+                        <span class="x-red">*</span>到期时间
+                    </label>
+                    <div class="layui-input-inline">
+                        <input class="layui-input" placeholder="到期时间" name="end" id="start">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label for="username" class="layui-form-label">
+                        <span class="x-red">*</span>场馆地址
+                    </label>
+                    <div class="layui-input-inline">
+                        <input type="text" id="address" name="address" placeholder="请输入场馆地址" required="" lay-verify="required"
+                               autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label for="username" class="layui-form-label">
+                        <span class="x-red">*</span>是否首页推荐
+                    </label>
+                    <div class="layui-input-inline">
+                        <select name="city" lay-verify="required">
+                            <option value="0">是</option>
+                            <option value="1">否</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label for="username" class="layui-form-label">
+                        <span class="x-red">*</span>推荐序号
+                    </label>
+                    <div class="layui-input-inline">
+                        <select name="city" lay-verify="required">
+                            <option value="0">1</option>
+                            <option value="1">2</option>
+                            <option value="1">3</option>
+                            <option value="1">4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label for="username" class="layui-form-label">
+                        <span class="x-red">*</span>场馆联系人
+                    </label>
+                    <div class="layui-input-inline">
+                        <input type="text" id="age" name="age" placeholder="请输入场馆联系人" required="" lay-verify="required"
+                               autocomplete="off" class="layui-input">
+                    </div>
+                </div>
                 <div class="layui-form-item">
                     <label for="phone" class="layui-form-label">
-                        <span class="x-red">*</span>联系方式
+                        <span class="x-red">*</span>联系电话
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="phone" name="phone" placeholder="请输入联系方式" required="" lay-verify="phone"
+                        <input type="text" id="phone" name="phone" placeholder="请输入联系电话" required="" lay-verify="phone"
                                autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label for="username" class="layui-form-label">
-                        <span class="x-red">*</span>是否报名
-                    </label>
-                    <div class="layui-input-inline">
-                        <select name="city" lay-verify="required">
-                            <option value="0">报名</option>
-                            <option value="1">未报名</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="layui-form-item">
-                    <label for="username" class="layui-form-label">
-                        <span class="x-red">*</span>报名课程
-                    </label>
-                    <div class="layui-input-inline">
-                        <select name="city" lay-verify="required">
-                            <option value="0">篮球之王的进阶之路</option>
-                            <option value="1">篮球之王的进阶之路</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="layui-form-item">
-                    <label for="username" class="layui-form-label">
-                        <span class="x-red">*</span>备注信息
+                        <span class="x-red">*</span>场馆简介
                     </label>
                     <div class="layui-input-block">
-                        <textarea id="content" name="content" required="" lay-verify="required" class="layui-textarea"></textarea>
+                        <textarea id="content" name="content" placeholder="请输入备注信息" required="" lay-verify="required" class="layui-textarea"></textarea>
                     </div>
                 </div>
                 <div class="layui-form-item">
