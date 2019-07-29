@@ -1,0 +1,89 @@
+.account-bg{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:-999;
+}
+.account-bg img{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.logo {
+	width: 100%;
+}
+
+.logo img {
+	width: 20%;
+	margin-left: 40%;
+	margin-top: 25%;
+}
+.modify-content{
+	margin-top: 15%;
+	padding: 0;
+}
+.input-table{
+	width: 80%;
+	height: 40px;
+	border-radius: 50px;
+	margin-left: 10%;
+	background-color: rgb(217,230,247);
+}
+.input-left-img{
+	width: 15%;
+	text-align: right;
+}
+.input-left-img img{width: 40%;}
+.input-right-input{width: 80%;height: 100%;padding-left: 10px;}
+.input-right-input input{width: 95%;height: 100%;border: none;background: rgb(217,230,247);font-size: 16px;color: gray;}
+.get-code{
+	background-color: #1c81f7;
+	display: inline-block;
+	color: white;
+	border-radius: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: right;
+	/*position: absolute;*/
+	/*right: 11%;*/
+	/*height: 100%;*/
+	margin-left: 10px;
+}
+.modify-button{
+	width: 80%;
+	height: 40px;
+	background-color: #0a55fe;
+	line-height: 40px;
+	vertical-align: middle;
+	margin-left: 10%;
+	text-align: center;
+	color: white;
+	border-radius: 50px;
+	margin-top: 40px;
+}
+.user-agreement{
+	width: 100%;
+	padding: 15px;
+	text-align: center;
+	color: white;
+}
+.agreement{
+	color: white;
+}
+.agreement-check{
+	-webkit-appearance: radio;
+}
+.agreement-check:checked+label{
+	background-color: red`;
+}
+.mdui-radio-icon:before{
+	background-color: white;
+}
+.mdui-radio input[type=radio]:checked+.mdui-radio-icon{
+	border-color: white;
+}
+.mdui-radio-icon{
+	border-color: white;
+}

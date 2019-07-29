@@ -1,0 +1,36 @@
+*{ margin: 0; padding: 0; font-family: "微软雅黑";}
+html, body {
+	padding: 0px;
+	height: 100%;
+	margin: 0px;
+}
+.border{
+	height: 100%;
+}
+.content{
+	width: 100%;
+}
+a{text-decoration:none;}
+.hide{
+	display: none;
+}
+.show{
+	display: show;
+}
+.fanhui{ font-size: 2rem;}
+ .content{ overflow: hidden; margin-bottom: 4rem;}
+.tui{ width: 96%; overflow: hidden; background-color: #fff; border-radius: 0.4rem; margin: 2%;}
+.tuiDl{ width: 92%; overflow: hidden; margin: 4%;}
+.tuiDl dt{ float: left; width: 20%; height: 4.8rem;  line-height: 4.8rem;}
+.tuiDl dt img{ display: inline-block; width: 100%; border-radius: 50%;vertical-align: middle;  }
+.tuiDl dd{ float: left; width: 76%; overflow: hidden; font-size: 0.9rem; margin-left: 4%; height: 1.6rem; line-height: 1.6rem;}
+.tuiDl .ddLeft{ float: left; width: 70%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.tuiDl .xingming{ font-size: 1.1rem!important;}
+.tuiDl .lan{ color: #004B90;}
+.tuiDl .hui{ color: #828282;}
+.tuiDl .ddRight{ float: right; width: 30%; text-align: right;overflow: hidden; white-space: nowrap;text-overflow: ellipsis;}
+.tuiDl .bg{ background-color: #00AFF0; color: #fff; border-radius: 1rem; width: 28%; padding: 0 1%; text-align: center;}
+.wenzi{ width: 90%; overflow: hidden; margin: 4%; overflow: hidden;white-space: nowrap;text-overflow: ellipsis; border: 1px dotted #ccc; padding:2% 1%; border-radius: 0.4rem;}
+.dizhi{ width: 92%; overflow: hidden; margin: 4%; overflow: hidden; color: #828282;}
+.le{ float: left; }
+.ri{ float: right; text-align: right;}

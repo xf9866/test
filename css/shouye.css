@@ -1,0 +1,287 @@
+*{ margin: 0; padding: 0;}
+body{
+	background-color: #EDEDED;
+}
+.pageheader {
+	background-color: #00aff0;
+	padding: 10px 15px 15px 15px;
+	color: #0024C6;
+}
+
+.pageheader>div {
+	display: inline-block;
+}
+
+.login-address {
+	width: 23%;
+	position: relative;
+	top: 10px;
+}
+
+.la-login {
+	font-size: 15px;
+}
+
+.la-address {
+	width: 80%;
+}
+
+.la-address>div {
+	display: inline-block;
+}
+
+.la-address-name {
+	position: relative;
+	top: 5px;
+	width: 55%;
+	height: 16px;
+	overflow: hidden;
+}
+
+.la-address-icon {
+	float: right;
+}
+
+.scan {
+	width: 15%;
+	font-size: 12px;
+	text-align: center;
+	float: right;
+}
+
+.qm-scan {
+	font-size: 35px;
+}
+
+.shouye-search {
+	width: 60%;
+	position: relative;
+}
+
+.shouye-search input {
+	height: 30px;
+	width: 70%;
+	border: none;
+	border-radius: 10px;
+	padding-left: 20%;
+	padding-right: 10%;
+	background-image: url(../image/search.png);
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: 5px center;
+}
+
+.shouye-search input::-webkit-input-placeholder {
+	color: #668FD1;
+}
+
+.search-delete {
+	position: absolute;
+	right: 0;
+	z-index: 5;
+	background-image: url(../image/cuohao.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 25px 25px;
+	top: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+.classification{
+	color: #004B90;
+	width: 96%;
+	margin-left: 2%;
+	margin-top: 10px;
+	padding-top: 10px;
+	background-color:white;
+	border-radius: 10px;
+}
+
+.allclass{
+	border-bottom: 1px solid #DFDDDE;
+	height: 30px;
+	margin: auto 10px;
+	line-height: 30px;
+	vertical-align: middle;
+	padding-left: 10px;
+}
+.allclass-title{
+	display: inline-block;
+	font-size: 17px;
+}
+.allclass-icon{
+	float: right;
+}
+.allclass-icon img{
+	width: 70%;
+}
+#category{
+	padding: 10px;
+}
+#category span{
+	display: block;
+	color: #004B90;
+}
+#category div {
+	height:80px;
+}
+#category img{
+	width: 90%;
+}
+.rotation-chart{
+	width: 96%;
+	margin-left: 2%;
+	margin-top: 10px;
+}
+.rotation-chart img{
+	width: 100%;
+}
+.recommend-icon{
+	color: gray;
+}
+.recommend{
+	border-top: 1px solid #DFDDDE;
+	width: 90%;
+	margin-left: 5%;
+	padding-top: 10px;
+}
+.recommend>div{
+	display: inline-block;
+}
+.recommend-left{
+	width: 25%;
+}
+.recommend-left img{
+	width: 100%;
+	max-height: 80px;
+	max-width: 80px;
+	border-radius: 100px;
+}
+.recommend-center{
+	width: 45%;
+}
+.recommend-center div{
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	overflow: hidden;
+}
+.recommend-center span{
+	color: #DFDDDE;
+}
+.recommend-right{
+	width: 26%;
+}
+.recommend-right div{
+	text-align: right;
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	overflow: hidden;
+}
+.recommend-xinzi{
+	color: #012AC9;
+	background-color: #00AFF0;
+	border-radius: 5px;
+	padding: 0 5px;
+}
+.recommend-info{
+	border: 1px dotted gray;
+	border-radius: 5px;
+	width: 90%;
+	margin-left: 5%;
+	color: #393939;
+	font-size: 15px;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	margin: 10px auto;	
+}
+.recommend-bottom{
+	color: gray;
+	width: 90%;
+	margin-left: 5%;
+}
+.recommend-bottom>div{
+	display: inline-block;
+}
+.recommend-eye{
+	float: right;
+}
+.recommend-content{
+	padding-bottom: 15px;
+}
+.hot-article{
+	width: 90%;
+	margin-left: 5%;
+	border-top: 1px solid #DFDDDE;
+	padding: 15px 0;
+	margin-bottom: 20px;
+}
+.article-title{
+	font-size: 16px;
+}
+.article-content{
+	color: gray;
+	margin: 5px 0;
+	font-size: 14px;
+	height: 50px;
+	line-height: 25px;
+	overflow: hidden;
+}
+.article-time{
+	text-align: right;
+	color: gray;
+}
+
+.foot-navigation{
+	position: fixed;
+	box-shadow: none;
+    border-top: 1px solid #DFDDDE;
+    height: 60px;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.foot-navigation>a{
+	display: inline-block;
+	width: 19%;
+	text-align: center;
+	margin: 10px 2px;
+	color: #10509B;
+	
+}
+.menu-left{
+	float: left;
+}
+.menu-right{
+	float: right;
+}
+.menu-center{
+	position: fixed;
+	bottom: 0;
+}
+.menu-center>div{
+	background-color: white;
+	z-index: 2;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	border: 3px solid #DFDDDE;
+	border-radius: 50%;
+}
+.foot-navigation img{
+	display: block;
+	margin: 0 auto 5px auto;
+	width: 30px;
+}
+
+
+
+

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页置顶</title>
+    	<!-- 优先使用 IE 最新版本和 Chrome -->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	    <!-- 搜索引擎抓取 -->
+	    <meta name="robots" content="index,follow"/>
+	    <!-- 为移动设备添加 viewport -->
+	    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+	    <!-- `width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
+	  
+	    <!-- iOS 设备 begin -->
+	    <meta name="apple-mobile-web-app-title" content="标题">
+	    <!-- 添加到主屏后的标题（iOS 6 新增） -->
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+	 
+	    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+	    <!-- 添加智能 App 广告条 Smart App Banner（iOS 6+ Safari） -->
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <!-- 设置苹果工具栏颜色 -->
+	    <meta name="format-detection" content="telphone=no, email=no"/>
+	    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	    <!-- 启用360浏览器的极速模式(webkit) -->
+	    <meta name="renderer" content="webkit">
+	    <!-- 避免IE使用兼容模式 -->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	    <meta name="HandheldFriendly" content="true">
+	    <!-- 微软的老式浏览器 -->
+	    <meta name="MobileOptimized" content="320">
+	    <!-- uc强制竖屏 -->
+	    <meta name="screen-orientation" content="portrait">
+	    <!-- QQ强制竖屏 -->
+	    <meta name="x5-orientation" content="portrait">
+	    <!-- UC强制全屏 -->
+	    <meta name="full-screen" content="yes">
+	    <!-- QQ强制全屏 -->
+	    <meta name="x5-fullscreen" content="true">
+	    <!-- UC应用模式 -->
+	    <meta name="browsermode" content="application">
+	    <!-- QQ应用模式 -->
+	    <meta name="x5-page-mode" content="app">
+	    <!-- windows phone 点击无高光 -->
+	    <meta name="msapplication-tap-highlight" content="no">
+	    <!-- iOS 图标 begin -->
+	    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png"/>
+	    <!-- iPhone 和 iTouch，默认 57x57 像素，必须有 -->
+	    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png"/>
+	    <!-- Retina iPhone 和 Retina iTouch，114x114 像素，可以没有，但推荐有 -->
+	    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png"/>
+	    <!-- Retina iPad，144x144 像素，可以没有，但推荐有 -->
+	    <!-- iOS 图标 end -->
+	  
+	    <!-- iOS 启动画面 begin -->
+	    <link rel="apple-touch-startup-image" sizes="768x1004" href="/splash-screen-768x1004.png"/>
+	    <!-- iPad 竖屏 768 x 1004（标准分辨率） -->
+	    <link rel="apple-touch-startup-image" sizes="1536x2008" href="/splash-screen-1536x2008.png"/>
+	    <!-- iPad 竖屏 1536x2008（Retina） -->
+	    <link rel="apple-touch-startup-image" sizes="1024x748" href="/Default-Portrait-1024x748.png"/>
+	    <!-- iPad 横屏 1024x748（标准分辨率） -->
+     	<link rel="apple-touch-startup-image" sizes="2048x1496" href="/splash-screen-2048x1496.png"/>
+     	<!-- iPad 横屏 2048x1496（Retina） -->
+  
+     	<link rel="apple-touch-startup-image" href="/splash-screen-320x480.png"/>
+    	<!-- iPhone/iPod Touch 竖屏 320x480 (标准分辨率) -->
+     	<link rel="apple-touch-startup-image" sizes="640x960" href="/splash-screen-640x960.png"/>
+     	<!-- iPhone/iPod Touch 竖屏 640x960 (Retina) -->
+     	<link rel="apple-touch-startup-image" sizes="640x1136" href="/splash-screen-640x1136.png"/>
+     	<!-- iPhone 5/iPod Touch 5 竖屏 640x1136 (Retina) -->
+     	<!-- iOS 启动画面 end -->
+  
+     	<!-- iOS 设备 end -->
+     	
+     	<script src="mdui/js/mdui.min.js" type="text/javascript" charset="utf-8"></script>
+ 	<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+<script src="js/iconfont.js"></script>
+     	<link rel="stylesheet" type="text/css" href="mdui/css/mdui.min.css"/>
+     	<!-- 引入mdui css js-->
+     	
+     	<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<!-- 引入公共css-->
+		<link rel="stylesheet" type="text/css" href="css/rongzitouzi.css"/>
+		<!-- 引入当前页面css -->
+		
+		<script type="text/javascript">
+			function goBack()
+			{
+				window.history.back()
+			}
+		</script>
+		<!-- 返回键-->
+	</head>
+	<body>
+		<div class="public-header" style="background-color: #00AFF0;">
+			<div class="public-header-left">
+				<a class="back" onclick='goBack()'>
+					<i class="mdui-icon material-icons fanhui">&#xe5cb;</i>
+				</a>
+			</div>
+			<div class="title">搜索靠前</div>
+			<div class="public-header-right"></div>
+		</div>
+		<style>
+			body{ background-color: #fff!important; font-size: 1rem;}
+			.biaoti{ width: 92%; text-align: center; font-size: 1.1rem; margin:4%; height: 2rem; line-height: 2rem;}
+			.biaoti img{width: 1.4rem;height: 1.4rem; border-radius: 50%; vertical-align: middle; display: inline-block; margin-right: 0.2rem; margin-bottom: 0.2rem;}
+			.neirong{ width: 92%; margin: 4%; line-height: 1.8rem; color: #5C5C5C; font-size: 0.9rem;}
+			.neirong2{ width: 92%; margin: 4%; line-height: 1.8rem; color: #5C5C5C; font-size: 1.1rem; }
+			.zhifu{ width: 92%; margin: 4%; overflow: hidden; font-size: 0.9rem;}
+			.zhifu li{ list-style: none;}
+			.zhifu li a{ float: left; width: 25%; color: #5C5C5C;}
+			.zhifu li a span{ margin-right: 0.2rem;}
+			.zhifu2{ width: 92%; margin: 4%; overflow: hidden; font-size: 0.9rem;}
+			.zhifu2 li{ list-style: none;float: left; width: 25%; color: #5C5C5C;}
+			.zhifu2 li span{ margin-right: 0.2rem;}
+			.xuanze{ overflow-x: scroll; white-space: nowrap; display: flex; overflow-y: hidden; margin-left: 2%; }
+			.xuanze::-webkit-scrollbar {
+    display: none;
+}
+			.xianjia{ float: left;  text-align: center; margin-right: 2%; border: 1px solid #ccc; border-radius: 0.4rem;}
+			.xianTop{ width: 120px;  padding: 0.6rem 0;}
+			.xianjiadian{ border-color:#fff!important;border-radius: 0.4rem;}
+			.xianTodian{background-color: #FFFA7C;}
+			.xianBodian{background-color: #FFFEE0;}
+			.xianBot{width:120px; }
+			.xianBot p{ line-height: 1.6rem; line-height: 2rem; font-size: 0.9rem;}
+			.p1{ text-align: left; text-indent: 1rem;}
+			.p2{ font-weight: bold; color: #f00; font-size: 1.5rem!important; margin-bottom: 0.6rem;}
+			.p3 span{ text-decoration: line-through;}
+			
+		</style>
+		<div class="content">
+			<form>
+			<p class="biaoti"><img src="image/jiao4.png" /> 首页置顶尊享一下特权</p>
+			<p class="neirong">会员详情-二级页，出现在首页-今日推荐-二级页上，让包括游客在内的所有人打开济连第- -时间就能看到， 产生先入为主的效果。</p>
+			<!--<div class="xuanze">
+				<div class="xianjia xianjiadian">
+					<div class="xianTop xianTodian">12个月</div>
+					<div class="xianBot xianBodian">
+						<p class="p1">现价:</p>
+						<p class="p2">￥199</p>
+						<p class="p3">原价:￥:<span>499</span></p>
+					</div>
+				</div>
+				<div class="xianjia">
+					<div class="xianTop">12个月</div>
+					<div class="xianBot">
+						<p class="p1">现价:</p>
+						<p class="p2">￥199</p>
+						<p class="p3">原价:￥:<span>499</span></p>
+					</div>
+				</div>
+				<div class="xianjia">
+					<div class="xianTop">12个月</div>
+					<div class="xianBot">
+						<p class="p1">现价:</p>
+						<p class="p2">￥199</p>
+						<p class="p3">原价:￥:<span>499</span></p>
+					</div>
+				</div>
+				<div class="xianjia">
+					<div class="xianTop">12个月</div>
+					<div class="xianBot">
+						<p class="p1">现价:</p>
+						<p class="p2">￥199</p>
+						<p class="p3">原价:￥:<span>499</span></p>
+					</div>
+				</div>
+			</div>-->
+			<style>
+				.riqibox{overflow-x: scroll; white-space: nowrap; display: flex; overflow-y: hidden; margin: 2%;}
+			.riqibox::-webkit-scrollbar {
+    display: none;}
+				.riqili input{ display: none;}
+				.riqili input:checked+label div{ border-color: #fff;}
+				.riqili input:checked+label div .xianTop{background-color: #FFFA7C;}
+				.riqili input:checked+label div .xianBot{background-color: #FFFEE0;}
+				.riqili{ float: left;  text-align: center; margin-right: 2%;}
+			</style>
+			<div class="riqibox">
+                <div class="riqili">
+                    <input type="radio" id="zhous1" name="zhou" value="" checked/>
+                    <label for="zhous1">
+                    	<div class="xianjia">
+							<div class="xianTop">12个月</div>
+							<div class="xianBot">
+								<p class="p1">现价:</p>
+								<p class="p2">￥199</p>
+								<p class="p3">原价:￥:<span>499</span></p>
+							</div>
+						</div>
+                    </label>
+                </div>
+                <div class="riqili">
+                    <input type="radio" id="zhous2" name="zhou" value="" />
+                    <label for="zhous2">
+                    	<div class="xianjia">
+							<div class="xianTop">12个月</div>
+							<div class="xianBot">
+								<p class="p1">现价:</p>
+								<p class="p2">￥199</p>
+								<p class="p3">原价:￥:<span>499</span></p>
+							</div>
+						</div>
+                    </label>
+                </div>
+                <div class="riqili">
+                    <input type="radio" id="zhous3" name="zhou" value="" />
+                    <label for="zhous3">
+                    	<div class="xianjia">
+							<div class="xianTop">12个月</div>
+							<div class="xianBot">
+								<p class="p1">现价:</p>
+								<p class="p2">￥199</p>
+								<p class="p3">原价:￥:<span>499</span></p>
+							</div>
+						</div>
+                    </label>
+                </div>
+                <div class="riqili">
+                    <input type="radio" id="zhous4" name="zhou" value="" />
+                    <label for="zhous4">
+                    	<div class="xianjia">
+							<div class="xianTop">12个月</div>
+							<div class="xianBot">
+								<p class="p1">现价:</p>
+								<p class="p2">￥199</p>
+								<p class="p3">原价:￥:<span>499</span></p>
+							</div>
+						</div>
+                    </label>
+                </div>
+           </div>
+			<p class="neirong2">选择支付方式</p>
+			<ul class="zhifu2">
+				<input type="radio" id="zhou21" name="zhou2" value="" style="display: none;"/>
+                    <label for="zhous21">
+                    	<li><span class="icon iconfont" style="color: #056CD5;">&#xe613;</span>我的账户</li>
+                    </label>
+                    <input type="radio" id="zhou21" name="zhou2" value="" style="display: none;"/>
+                    <label for="zhous21">
+                    <li><span class="icon iconfont" style="color: #00B98F;">&#xe65a;</span>微信支付</li>
+                    </label>
+                    <input type="radio" id="zhou21" name="zhou2" value="" style="display: none;"/>
+                    <label for="zhous21">
+                    <li><span class="icon iconfont" style="color: #4FA4FE;">&#xe603;</span>支付宝</li>
+                    </label>
+                    <input type="radio" id="zhou21" name="zhou2" value="" style="display: none;"/>
+                    <label for="zhous21">
+                    <li><span class="icon iconfont" style="color: #C12C20;">&#xe65b;</span>银行卡</li>
+                    </label>
+			</ul>
+			<!--<ul class="zhifu">
+				<li><a href="#"><span class="icon iconfont" style="color: #056CD5;">&#xe613;</span>我的账户</a></li>
+				<li><a href="#"><span class="icon iconfont" style="color: #00B98F;">&#xe65a;</span>微信支付</a></li>
+				<li><a href="#"><span class="icon iconfont" style="color: #4FA4FE;">&#xe603;</span>支付宝</a></li>
+				<li><a href="#"><span class="icon iconfont" style="color: #C12C20;">&#xe65b;</span>银行卡</a></li>
+			</ul>-->
+			<div style="text-align: center; margin: 3rem 0;">
+				<button style="background-color: #019FE8; padding:0.3rem 0.6rem; border: none; color: #004090; border-radius: 0.4rem; font-size: 1rem;">立即支付</button>
+			</div>
+			</form>
+		</div>
+		
+	</body>
+</html>

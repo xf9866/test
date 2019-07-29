@@ -1,0 +1,123 @@
+body{
+	background-color: #EDEDED;
+}
+/*顶部*/
+.public-header{
+	height: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    z-index: 1;
+    backface-visibility: hidden;
+    background: #00aff0;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    
+}
+.public-header-left{
+	position: absolute;
+    left: 0;
+    padding-left: .3rem;
+    height: 3rem;
+    line-height: 3rem;
+    z-index: 2;
+    color: #0125C9;
+}
+.public-header .title{
+	    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 3rem;
+    line-height: 3rem;
+    color: #004090;
+    text-align: center;
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.public-header-right{
+	position: absolute;
+    right: 0;
+    padding-right: .3rem;
+    height: 3rem;
+    line-height: 3rem;
+    z-index: 2;
+    font-size: .7rem;
+}
+.public-header-right img{
+	width: 30px;
+	margin-top: .6rem;
+}
+/*头部end*/
+
+/*底部输入框功能栏*/
+.foot-navigation{
+	position: fixed;
+	box-shadow: none;
+    border-top: 1px solid #DFDDDE;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #E0E0E0;
+}
+.chatbox{
+	border-bottom: 1px solid #CDCDCD;
+	padding-bottom: 5px;
+}
+#qmface li{
+	display: inline-block;
+	direction: none;
+}
+ul,li{
+	margin:0;
+	padding:0;
+}
+#functionbar{
+	/*display: none;*/
+	padding: 10px 0;
+}
+#functionbar img{
+	max-width: 70px;
+	max-height: 45px;
+}
+.mdui-valign{
+	margin: 10px;
+}
+.mdui-text-center{
+	margin: 10px;
+}
+
+#chatbox i{
+	font-size: 30px;
+}
+#keybar, #voicebar{
+	width: 80%;
+	height: 25px;
+	border: none;
+	border-radius:5px;
+	padding: 0 5px;
+	margin: 0 8px;
+	background-color: white;
+}
+.send-button{
+	margin-left: 10px;
+	background-color: #cdcdcd;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+.send-button:active{
+	background-color: #C9C9C9;
+}
