@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>分成比例</title>
+		<title>场景地图</title>
     	<!-- 优先使用 IE 最新版本和 Chrome -->
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	    <!-- 搜索引擎抓取 -->
@@ -83,9 +83,8 @@
      	<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<!-- 引入公共css-->
 		<link rel="stylesheet" type="text/css" href="css/rongzitouzi.css"/>
-		<link rel="stylesheet" href="css/icheck-bootstrap.css">
-		<link rel="stylesheet" href="css/fenchengbili.css">
-		
+		<script type="text/javascript" src='https://a.amap.com/jsapi_demos/static/resource/capitals.js'></script>
+  		<script type="text/javascript" src='https://webapi.amap.com/maps?v=1.4.15&key=您申请的key值'></script>
 		<!-- 引入当前页面css -->
 		
 		<script type="text/javascript">
@@ -94,74 +93,78 @@
 				window.history.back()
 			}
 		</script>
+		<style>
+	#map {
+      width: 96%;
+      margin: 2%!important;
+      border-radius: 0.4rem;
+      height: 200px;
+      margin:0;
+    }
+    .amap-logo{ display: none!important;}
+    .amap-copyright{ display: none!important;}
+    .mapUl{
+    	width: 96%;
+        margin: 2%!important;
+        overflow: hidden;
+        background-color: #fff;
+        color: #004090;
+        padding: 2% 0;
+        border-radius: 0.4rem;
+    }
+    .mapUl li{ float: left; width: 17%; text-align: center; list-style: none;padding: 2% 0; font-size: 0.9rem; padding-left: 4%; margin: 0 2%; background-repeat: no-repeat; background-position: left center; background-size: 0.5rem;}
+		</style>
 		<!-- 返回键-->
 	</head>
 	<body>
-		<div class="public-header" style="background-color: #00AFF0;">
+		<div class="public-header" style="background-color: #014090;">
 			<div class="public-header-left">
 				<a class="back" onclick='goBack()'>
-					<i class="mdui-icon material-icons fanhui">&#xe5cb;</i>
+					<i class="mdui-icon material-icons fanhui" style="color: #fff;">&#xe5cb;</i>
 				</a>
 			</div>
-			<div class="title">分成比例</div>
+			<div class="title" style="color: #fff;">场景地图</div>
 			<div class="public-header-right"></div>
 		</div>
 		<div class="content">
-		
-			<!--<p class="biaoti">搜索靠前尊享一下特权</p>-->
-			<p class="neirong">A0级与B-级、B- -级与C二级之间，任何一方都可以提出分成比例并点黄同意，对方如果点黄再议，则提出方修改分成比例并点黄同意，直到对方点黄同意，该分成比例就出现在点黄的确认比例里，同时双方所点黄的同意之后黄色消失，还原为同意。如此循环往复。</p>
-			<div >
-				<table >
-				    <tbody>
-				    	<tr style="border: none;">
-					        <th></th>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th>分成<br>(比例%)</th>
-						</tr>
-      					<tr>
-					        <td class="lan">A</td>
-							<td class="lan">0级</td>
-							<td>同意</td>
-							<td>再议</td>
-							<td>00</td>
-						</tr>
-						<tr>
-					        <td class="lan">A</td>
-							<td class="lan">1级</td>
-							<td>同意</td>
-							<td>再议</td>
-							<td>00</td>
-						</tr>
-    				</tbody>
-				</table>
-				<table >
-				    <tbody>
-				    	<tr style="border: none;">
-							<th class="hong">确认<br>(比例%)</th>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
-						</tr>
-				    	<tr>
-							<td class="hong">00</td>
-							<td>同意</td>
-							<td>再议</td>
-							<td class="lan">B</td>
-							<td class="lan">1级</td>
-						</tr>
-						<tr>
-							<td class="hong">00</td>
-							<td>同意</td>
-							<td>再议</td>
-							<td class="lan">B</td>
-							<td class="lan">2级</td>
-						</tr>
-    				</tbody>
-				</table>
-			</div>
+			<div id="map"></div>
+			<ul class="mapUl">
+				<li style="background-image:url(image/dian5.png); color: #058CFF;">租享你我</li>
+				<li style="background-image:url(image/dian1.png);  color: #0126C8;">有空帮忙</li>
+				<li style="background-image:url(image/dian2.png);  color: #FF2E3D;">诸葛点播</li>
+				<li style="background-image:url(image/dian3.png);  color: #CA1010;">租享技艺</li>
+				<li style="background-image:url(image/dian4.png);  color: #F4E600;">租享东西</li>
+				<li style="background-image:url(image/dian2.png);  color: #FF2E3D;">是你是我</li>
+				<li style="background-image:url(image/dian3.png);  color: #CA1010;">上班生活</li>
+				<li style="background-image:url(image/dian4.png);  color: #F4E600;">融资投资</li>
+				<li style="background-image:url(image/dian1.png);  color: #0126C8;">源出同根</li>
+				<li style="background-image:url(image/dian5.png);  color: #058CFF;">兴趣群聚</li>
+			</ul>
 		</div>
+		<script>
+			//https://lbs.amap.com/api/javascript-api/example/marker/circlemarker
+      var map = new AMap.Map('map', {
+        // viewMode: '3D',
+        zoom: 4,
+        center: [ 108, 34]
+      })
+      for(var i=0;i<capitals.length;i+=1){
+        var center = capitals[i].center;
+        var circleMarker = new AMap.CircleMarker({
+          center:center,
+          radius:10+Math.random()*10,//3D视图下，CircleMarker半径不要超过64px
+          strokeColor:'white',
+          strokeWeight:2,
+          strokeOpacity:0.5,
+          fillColor:'rgba(0,0,255,1)',
+          fillOpacity:0.5,
+          zIndex:10,
+          bubble:true,
+          cursor:'pointer',
+          clickable: true
+        })
+        circleMarker.setMap(map)
+      }
+    </script>
 	</body>
 </html>

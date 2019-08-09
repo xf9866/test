@@ -119,24 +119,7 @@
 			</style>
 			<div>
 				<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-				<script type="text/javascript">
-   $(function(){
-    	$(".dianji").click(function(){
- $(".qiehuan").toggle();
-});
-    	$(".xuanzeuL2 li").click(
-    		function(){
-    			var neirong=$(this).text();
-//  			var str_before = neirong.split('check')[0];
-//  			console.log(neirong);
-    			$(".dianji").text(neirong);
-    			$(this).addClass("current");
-    			$(this).siblings().removeClass("current");
-    			$(".qiehuan").hide();
-    		}
-    	);	
-    })
-</script>
+				<script src="js/wenbenkuang.js"></script>
 <style>
 .content{ background-color: #fff;}.tui{border-bottom: 1px solid #DFDDDE!important;}
 .recommend-center {width: 47%!important;}

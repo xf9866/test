@@ -117,24 +117,7 @@
 			</style>
 			<div>
 				<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-				<script type="text/javascript">
-    $(function(){
-    	$(".dianji").click(function(){
- $(".qiehuan").toggle();
-});
-    	$(".xuanzeuL2 li").click(
-    		function(){
-    			var neirong=$(this).text();
-//  			var str_before = neirong.split('check')[0];
-//  			console.log(neirong);
-    			$(".dianji").text(neirong);
-    			$(this).addClass("current");
-    			$(this).siblings().removeClass("current");
-    			$(".qiehuan").hide();
-    		}
-    	);	
-    })
-</script>
+				<script src="js/wenbenkuang.js"></script>
 <style>
 *{ margin: 0; padding: 0;}
 .content{ background-color: #fff;}
@@ -170,6 +153,7 @@
 .riqili input:checked+label{ background-color: #00AFF0; }
 .mdui-ripple{ float: left!important; width: 100%!important;}
 .qiehuan{ width: 100%; position: absolute; height: 100%; background: rgba(0,0,0,.4); display: none; opacity: 1;}
+.mdui-tab{ border-bottom: 3px solid #ccc;border-top: 3px solid #ccc;}
 					</style>
 			</div>
 

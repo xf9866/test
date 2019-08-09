@@ -1,0 +1,89 @@
+li{
+	list-style: none;
+}
+img{
+	border:none;display: block
+}
+.box{
+	width: 100%; float: left;
+	 overflow: hidden;
+	border-bottom: 1px solid #EBEBEB!important;
+	padding: 2rem 0 0.6rem;
+}
+.imgFileUploade{
+	width: 100%; padding: 0;
+}
+.imgFileUploade .header{
+	height: 50px;width: 100%;line-height:50px;
+}
+.imgFileUploade .header span{
+	display: block;float:left;
+}
+.imgFileUploade .header span.imgTitle{
+	line-height:50px;
+}
+.imgFileUploade .header span.imgTitle b{
+	color:red;margin:0 5px;line-height: 57px;display: block;float: right;font-size: 20px;
+}
+.imgFileUploade .header span.imgClick{
+	width: 50px;height: 50px;margin-left: 0px;cursor: pointer;
+	background: url(../image/z_add.png) no-repeat center center;background-size:cover; 
+}
+.imgFileUploade .header span.imgcontent{
+	color:#999;margin-left:120px;line-height: 50px;
+}
+.imgFileUploade .imgAll{
+	width: 100%;    margin-top: 5px;
+}
+.imgFileUploade .imgAll ul:after{ 
+		visibility: hidden;  display: block; font-size: 0; content: ".";  clear: both; height: 0
+} 
+.imgFileUploade .imgAll li{
+	width: 5rem;height: 5rem;border:solid 1px #ccc;margin:8px 5px;float: left;position: relative;box-shadow: 0 0 10px #eee;
+}
+.imgFileUploade .imgAll li img{
+	position: absolute;top:0;left:0;width: 100%;height: 100%;display: block;
+}
+.delImg{
+	position: absolute;top:-10px;right:-7px;width: 22px;height: 22px;background: #000;border-radius: 50%;display: block;text-align:  center;line-height: 22px;color:#fff;font-weight: 700;font-style:normal;cursor: pointer;
+}
+.public-header-right a {
+color: #004090;
+    font-size: 1rem;
+    margin-top: .6rem;
+}
+body{ background-color: #fff!important; font-size: 1rem;}
+form{ width: 92%; margin: 4%; overflow: hidden; font-size: 1rem;}
+.ping{ width: 100%; overflow: hidden;  border-bottom: 1px solid #EBEBEB; padding: 0.4rem 0;}
+.riqili input{ display: none;}
+.pingjia{ float: left; height: 1.4rem; line-height: 1.4rem; color: #494949; width: 30%; text-align: justify;}
+.riqibox{ float: left; overflow: hidden; height: 1.4rem; line-height: 1.4rem; width: 70%; }
+.riqibox input{ width: 100%; display: inline-block;  border: none;}
+.neirong{ width: 100%; overflow: hidden; margin: 1rem 0;}
+.neirong label{ width: 100%; float: left; color: #494949; margin-bottom: 0.6rem;}
+.neirong textarea{ width: 100%; float: left; height: 12rem; border: none;}
+.sma{ font-size: 0.8rem;}
+.mdui-select{ width: 100%!important;   background-position:center right !important;}
+.mdui-select-selected{ text-align: left!important;}
+.mdui-select-menu-item[selected]{color: #012AC9!important;}
+.mdui-ripple{ float: left!important; width: 80%!important;}
+.mdui-panel-item-header{ width: 100%!important; margin: 0; padding: 0!important;}
+.mdui-panel-item-arrow{ right: 0!important;}
+.mdui-panel-item-body{ padding: 0!important;}
+.mdui-panel-item{border-bottom: 1px solid #E2E2E2!important; font-size: 1rem!important; box-shadow:none!important;-webkit-box-shadow:none!important;}
+.mdui-panel-item-body p{ height: 48px; line-height: 48px;}
+.mdui-panel-item-title{ width: 80%!important; font-size: 1rem!important;}
+.shuzi{ margin-left: 0.4rem; color: #0067C5; font-size: 0.8rem;}
+.zhankai{ width: 100%; overflow: hidden; border-bottom: 1px solid #E2E2E2;}
+.zhankai2{ width: 80%; overflow: hidden; border-bottom: 1px solid #E2E2E2; padding: 0 10%;}
+.pLeft{ width: 50%; float: left;}
+.pRight{ width: 50%; float: left; text-align: right; color: #f00;}
+.kejian{height: 36px; line-height: 36px; float: left; padding-left: 1.2rem; color: #8F8F8F;}
+.pingjia > span { display: inline-block /* Opera */; padding-left: 100%; }
+.riqi{ width: 45%!important; }
+.riqi::-webkit-input-placeholder { /* WebKit browsers */ 
+color: red; 
+} 
+.shijian::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #ccc; 
+} 

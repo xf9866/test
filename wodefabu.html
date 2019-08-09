@@ -83,8 +83,14 @@
      	<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<!-- 引入公共css-->
 		<link rel="stylesheet" type="text/css" href="css/rongzitouzi.css"/>
-		<!-- 引入当前页面css -->
-		
+		<style>
+			.chufa{position: absolute; width: 96%; left: 2%; display: none;}
+			.tuiTan{ width: 100%;  overflow: hidden; background-color: #404040; border-radius: 0.2rem;}
+			.tuiTan button{width: 33%; float: left; background-color: #404040; border: none;}
+			.tuiTan dl{  width: 100%; float: left;text-align: center; color: #fff; font-size: 0.9rem; padding: 0.8rem 0; /*background-color: #404040;*/}
+			.tuiTan dl dt{ padding-bottom: 0.4rem;}
+			.tuiTan dl dt span{ font-size: 1.4rem;}			
+		</style>
 		<script type="text/javascript">
 			function goBack()
 			{
@@ -94,6 +100,14 @@
 		<!-- 返回键-->
 	</head>
 	<body>
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+		<script>
+			$(function(){
+    	$(".tui").click(function(){
+    		$(this).find(".chufa").toggle();
+});
+    })
+		</script>
 		<div class="public-header" style="background-color: #00AFF0;">
 			<div class="public-header-left">
 				<a class="back" onclick='goBack()'>
@@ -113,6 +127,47 @@
 				</dl>
 				<p class="wenzi">本公司现招聘会计一名，性别女。学历中专或大专以上。爱上的空间暗红色的会计哈科技</p>
 				<p class="dizhi"><span class="icon iconfont le">&#xe61f;烟台市芝罘区</span><span class="icon iconfont ri">&#xe66a;156人已查看</span></p>
+				<div  class="chufa">
+					<img src="image/sanjiao.png"  style="width: 6%; height: 1.6rem; position: absolute;top: -1.2rem; left:47%; z-index: 10;"/>
+					<div class="tuiTan" >
+						<button>
+							<dl>
+							<dt><span class="icon iconfont">&#xe63e;</span></dt>
+							<dd>查看</dd>
+						</dl>
+						</button>
+						<button>
+							<dl>
+							<dt><span class="icon iconfont">&#xe66d;</span></dt>
+							<dd>置顶</dd>
+						</dl>
+						</button>
+						<button>
+							<dl>
+							<dt><span class="icon iconfont">&#xe635;</span></dt>
+							<dd>靠前</dd>
+						</dl>
+						</button>
+					<!--<a href="#">
+						<dl>
+							<dt><span class="icon iconfont">&#xe63e;</span></dt>
+							<dd>查看</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><span class="icon iconfont">&#xe66d;</span></dt>
+							<dd>置顶</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><span class="icon iconfont">&#xe635;</span></dt>
+							<dd>靠前</dd>
+						</dl>
+					</a>-->
+					</div>
+				</div>
 			</div>
 			<div class="tui">
 				<dl class="tuiDl">
@@ -123,6 +178,29 @@
 				</dl>
 				<p class="wenzi">本公司现招聘会计一名，性别女。学历中专或大专以上。爱上的空间暗红色的会计哈科技</p>
 				<p class="dizhi"><span class="icon iconfont le">&#xe61f;&nbsp;烟台市芝罘区</span><span class="icon iconfont ri">&#xe66a;&nbsp;156人已查看</span></p>
+				<div  class="chufa">
+					<img src="image/sanjiao.png"  style="width: 6%; height: 1.6rem; position: absolute;top: -1.2rem; left:47%; z-index: 10;"/>
+					<div class="tuiTan" >
+						<button>
+							<dl>
+							<dt><span class="icon iconfont">&#xe63e;</span></dt>
+							<dd>查看</dd>
+						</dl>
+						</button>
+						<button>
+							<dl>
+							<dt><span class="icon iconfont">&#xe66d;</span></dt>
+							<dd>置顶</dd>
+						</dl>
+						</button>
+						<button>
+							<dl>
+							<dt><span class="icon iconfont">&#xe635;</span></dt>
+							<dd>靠前</dd>
+						</dl>
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
 		

@@ -83,6 +83,46 @@
      	<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<!-- 引入公共css-->
 		<link rel="stylesheet" type="text/css" href="css/rongzitouzi.css"/>
+		<style>
+			*{ margin: 0; padding: 0;}
+			.content{ background-color: #fff;}
+			.public-header{background-color: #CA0000!important;}
+			.public-header .title {color: #0026D0!important;}
+			.tui{border-bottom: 1px solid #DFDDDE!important;}
+			.recommend-center {width: 47%!important;}
+			.recommend-right {width: 25%!important;}
+			.xuanzeuL{ width: 100%; overflow: hidden; background-color: #fff; font-size: 1rem;}
+			.xuanzeuL li{ list-style: none; }
+			.xuanzeuL li select{ width: 25%; float: left; text-align: center; padding: 0.2rem 0; color: #787878;}
+			.xuanzeuL li a{ width: 25%; float: left; text-align: center; padding: 0.2rem 0; color: #787878;}
+			.xuanzeuL li a:hover{color: #1C5499;}
+			/*.xuanzeuL li.current a{color: #1C5499;}*/
+			.xuanzeuL2{ width: 100%; overflow: hidden; background-color: #fff;}
+			.xuanzeuL2 li{ list-style: none; }
+			.xuanzeuL2 li a{ width: 85%; float: left;  padding: 2% 5%; color: #787878; font-size: 1rem; margin-right: 5%;}
+			.xuanzeuL2 li a:active{color: #1C5499; background: url(image/duihao.png) no-repeat right center; background-size: 1rem;}
+			.xuanzeuL2 li.current a{color: #1C5499; background: url(image/duihao.png) no-repeat right center; background-size: 1rem;}
+			.yin{ display: none;}
+			.mdui-select{ width: 100%!important; margin: 5% 0; border-bottom: none!important;}
+			.mdui-select-selected{ text-align: left!important; color: #012AC9!important;}
+			.mdui-select-menu-item[selected]{color: #012AC9!important;}
+			.riqibox{width: 100%; overflow: hidden;}
+			.riqibox .riqili{overflow: hidden; width: 40%; text-align:center; float: left; margin: 5%;}
+			.riqibox .riqili2{overflow: hidden; width: 30%; text-align:center; float: left; margin:5% 1.6%;}
+			.riqibox .riqili input{ display: none; }
+			.riqibox .riqili2 input{ display: none; }
+			.riqibox .riqili2 label{ width:100%;  float:left; font-size: 1rem; line-height: 1.8rem; background-color: #E6E6E6; border-radius: 0.4rem; color: #012AC9;}
+			.riqili2 input:checked+label{ background-color: #00AFF0; }
+			.riqibox .riqili label{ width:100%;  float:left; font-size: 1rem; line-height: 1.8rem; background-color: #E6E6E6; border-radius: 0.4rem; color: #012AC9;}
+			.riqili input:checked+label{ background-color: #00AFF0; }
+			.mdui-ripple{ float: left!important; width: 100%!important;}
+			.qiehuan{ width: 100%; position: absolute; height: 100%; background: rgba(0,0,0,.4); display: none; opacity: 1;}
+			.screen-type div{ padding: 3px 22px!important;}
+			.qujian{width: 40%; display: inline-block; border-radius: 5rem; border: none; background-color: #DEDEDE; padding:0.3rem 0.2rem; text-align: right;}
+			/*.riqibox .riqili{overflow: hidden; width: 40%; text-align:center; float: left; margin: 5%;}*/
+			button{ width: 30%; background-color:#00AFF0; border:none; padding: 0.4rem; border-radius: 5rem; color: #fff;}	
+			.mdui-tab{ border-bottom: 3px solid #ccc;border-top: 3px solid #ccc;}	
+					</style>
 		<!-- 引入当前页面css -->
 		
 		<script type="text/javascript">
@@ -119,59 +159,7 @@
 				<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 				<script type="text/javascript">
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-				<script type="text/javascript">
-    $(function(){
-    	$(".dianji").click(function(){
- $(".qiehuan").toggle();
-});
-    	$(".xuanzeuL2 li").click(
-    		function(){
-    			var neirong=$(this).text();
-//  			var str_before = neirong.split('check')[0];
-//  			console.log(neirong);
-    			$(".dianji").text(neirong);
-    			$(this).addClass("current");
-    			$(this).siblings().removeClass("current");
-    			$(".qiehuan").hide();
-    		}
-    	);	
-    })
-</script>
-<style>
-*{ margin: 0; padding: 0;}
-.content{ background-color: #fff;}
-.public-header{background-color: #CA0000!important;}
-.public-header .title {color: #0026D0!important;}
-.tui{border-bottom: 1px solid #DFDDDE!important;}
-.recommend-center {width: 47%!important;}
-.recommend-right {width: 25%!important;}
-.xuanzeuL{ width: 100%; overflow: hidden; background-color: #fff; font-size: 1rem;}
-.xuanzeuL li{ list-style: none; }
-.xuanzeuL li select{ width: 25%; float: left; text-align: center; padding: 0.2rem 0; color: #787878;}
-.xuanzeuL li a{ width: 25%; float: left; text-align: center; padding: 0.2rem 0; color: #787878;}
-.xuanzeuL li a:hover{color: #1C5499;}
-/*.xuanzeuL li.current a{color: #1C5499;}*/
-.xuanzeuL2{ width: 100%; overflow: hidden; background-color: #fff;}
-.xuanzeuL2 li{ list-style: none; }
-.xuanzeuL2 li a{ width: 85%; float: left;  padding: 2% 5%; color: #787878; font-size: 1rem; margin-right: 5%;}
-.xuanzeuL2 li a:active{color: #1C5499; background: url(image/duihao.png) no-repeat right center; background-size: 1rem;}
-.xuanzeuL2 li.current a{color: #1C5499; background: url(image/duihao.png) no-repeat right center; background-size: 1rem;}
-.yin{ display: none;}
-.mdui-select{ width: 100%!important; margin: 5% 0; border-bottom: none!important;}
-.mdui-select-selected{ text-align: left!important; color: #012AC9!important;}
-.mdui-select-menu-item[selected]{color: #012AC9!important;}
-.riqibox{width: 100%; overflow: hidden;}
-.riqibox .riqili{overflow: hidden; width: 40%; text-align:center; float: left; margin: 5%;}
-.riqibox .riqili2{overflow: hidden; width: 30%; text-align:center; float: left; margin:5% 1.6%;}
-.riqibox .riqili input{ display: none; }
-.riqibox .riqili2 input{ display: none; }
-.riqibox .riqili2 label{ width:100%;  float:left; font-size: 1rem; line-height: 1.8rem; background-color: #E6E6E6; border-radius: 0.4rem; color: #012AC9;}
-.riqili2 input:checked+label{ background-color: #00AFF0; }
-.riqibox .riqili label{ width:100%;  float:left; font-size: 1rem; line-height: 1.8rem; background-color: #E6E6E6; border-radius: 0.4rem; color: #012AC9;}
-.riqili input:checked+label{ background-color: #00AFF0; }
-.mdui-ripple{ float: left!important; width: 100%!important;}
-.qiehuan{ width: 100%; position: absolute; height: 100%; background: rgba(0,0,0,.4); display: none; opacity: 1;}
-					</style>
+				<script src="js/wenbenkuang.js"></script>
 			</div>
 
 			<!-- 导航按钮组-->
@@ -277,12 +265,6 @@
 					  <option value="5">State 5</option>
 					  <option value="6">State 6</option>
 					</select>
-					<style>
-						.screen-type div{ padding: 3px 22px!important;}
-						.qujian{width: 40%; display: inline-block; border-radius: 5rem; border: none; background-color: #DEDEDE; padding:0.3rem 0.2rem; text-align: right;}
-						/*.riqibox .riqili{overflow: hidden; width: 40%; text-align:center; float: left; margin: 5%;}*/
-						button{ width: 30%; background-color:#00AFF0; border:none; padding: 0.4rem; border-radius: 5rem; color: #fff;}
-					</style>			
 					<div style="width: 100%; text-align: right; margin: 2rem 0 1rem;">
 						<button>确认</button>
 						<button>重置</button>

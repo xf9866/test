@@ -117,6 +117,16 @@
 			.yuan .yuerP2{ font-size: 2.6rem; font-weight: bold; font-family: monospace;}
 			.yuan .yuerP2 input{ font-size: 2.6rem; font-weight: bold; font-family: monospace; color: #0127C9; border: none; background-color:#00AFF0 ;}
 			.chongzhi{ width: 92%; margin: 4%;}
+        	.fuxuan{ width: 100%; overflow: hidden; margin-bottom: 2.6rem;}
+        	.fuxuan input{ display: none;}
+        	.fuxuan p{ width: 100%; background: url(image/fuxuan.png) no-repeat center left; height: 2rem; line-height: 2rem; background-size: 1.6rem;}
+        	.xuanzeDl{ width: 100%; overflow: hidden; height: 2.6rem;}
+        	.xuanzeDl dt{ float: left; height: 2.6rem; padding: 0.45rem 0;}
+        	.xuanzeDl dt img{ width: 1.7rem; height: 1.7rem; border-radius: 50%;  display: inline-block;}
+        	.xuanzeDl dd{ float: left; margin-left: 0.4rem;}
+        	.xuanzeDl dd span{ height: 1.3rem; line-height: 1.3rem; display: block;}
+        	.fuxuan label{ width: 84%; overflow: hidden; display: block; padding-left: 16%; background: url(image/fuxuan2.png) no-repeat center left; height: 2.6rem; line-height: 2.6rem; background-size: 1.6rem;}
+        	.fuxuan input:checked+label{ width: 84%; overflow: hidden; display: block; padding-left: 16%; background: url(image/fuxuan.png) no-repeat center left; height: 2.6rem; line-height: 2.6rem; background-size: 1.6rem;}
 		</style>
 		<div class="content">
            	<form>
@@ -128,18 +138,6 @@
 			</div>
 			<p class="neirong2">充值到</p>
 			<div class="chongzhi">
-                <style>
-                	.fuxuan{ width: 100%; overflow: hidden; margin-bottom: 2.6rem;}
-                	.fuxuan input{ display: none;}
-                	.fuxuan p{ width: 100%; background: url(image/fuxuan.png) no-repeat center left; height: 2rem; line-height: 2rem; background-size: 1.6rem;}
-                	.xuanzeDl{ width: 100%; overflow: hidden; height: 2.6rem;}
-                	.xuanzeDl dt{ float: left; height: 2.6rem; padding: 0.45rem 0;}
-                	.xuanzeDl dt img{ width: 1.7rem; height: 1.7rem; border-radius: 50%;  display: inline-block;}
-                	.xuanzeDl dd{ float: left; margin-left: 0.4rem;}
-                	.xuanzeDl dd span{ height: 1.3rem; line-height: 1.3rem; display: block;}
-                	.fuxuan label{ width: 84%; overflow: hidden; display: block; padding-left: 16%; background: url(image/fuxuan2.png) no-repeat center left; height: 2.6rem; line-height: 2.6rem; background-size: 1.6rem;}
-                	.fuxuan input:checked+label{ width: 84%; overflow: hidden; display: block; padding-left: 16%; background: url(image/fuxuan.png) no-repeat center left; height: 2.6rem; line-height: 2.6rem; background-size: 1.6rem;}
-                </style>
                 <div class="fuxuan">
                 	<input type="checkbox" id="zhou1" name="zhou"/>
                 	<label for="zhou1">
@@ -176,12 +174,6 @@
                     <li><span class="icon iconfont" style="color: #C12C20;">&#xe65b;</span>银行卡</li>
                     </label>
 			</ul>
-			<!--<ul class="zhifu">
-				<li><a href="#"><span class="icon iconfont" style="color: #056CD5;">&#xe613;</span>我的账户</a></li>
-				<li><a href="#"><span class="icon iconfont" style="color: #00B98F;">&#xe65a;</span>微信支付</a></li>
-				<li><a href="#"><span class="icon iconfont" style="color: #4FA4FE;">&#xe603;</span>支付宝</a></li>
-				<li><a href="#"><span class="icon iconfont" style="color: #C12C20;">&#xe65b;</span>银行卡</a></li>
-			</ul>-->
 			</form>
 		</div>
 		

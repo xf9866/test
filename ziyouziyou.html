@@ -83,6 +83,7 @@
      	<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<!-- 引入公共css-->
 		<link rel="stylesheet" type="text/css" href="css/rongzitouzi.css"/>
+		<link rel="stylesheet" type="text/css" href="css/biaodan.css"/>
 		<!-- 引入当前页面css -->
 		
 		<script type="text/javascript">
@@ -92,57 +93,6 @@
 			}
 		</script>
 		<!-- 返回键-->
-		<style>
-		li{
-			list-style: none;
-		}
-		img{
-			border:none;display: block
-		}
-		.box{
-			width: 100%; float: left;
-			 overflow: hidden;
-			border-bottom: 1px solid #EBEBEB!important;
-			padding: 2rem 0 0.6rem;
-		}
-		.imgFileUploade{
-			width: 100%; padding: 0;
-		}
-		.imgFileUploade .header{
-			height: 50px;width: 100%;line-height:50px;
-		}
-		.imgFileUploade .header span{
-			display: block;float:left;
-		}
-		.imgFileUploade .header span.imgTitle{
-			line-height:50px;
-		}
-		.imgFileUploade .header span.imgTitle b{
-			color:red;margin:0 5px;line-height: 57px;display: block;float: right;font-size: 20px;
-		}
-		.imgFileUploade .header span.imgClick{
-			width: 50px;height: 50px;margin-left: 0px;cursor: pointer;
-			background: url(image/z_add.png) no-repeat center center;background-size:cover; 
-		}
-		.imgFileUploade .header span.imgcontent{
-			color:#999;margin-left:120px;line-height: 50px;
-		}
-		.imgFileUploade .imgAll{
-			width: 100%;    margin-top: 5px;
-		}
-		.imgFileUploade .imgAll ul:after{ 
-				visibility: hidden;  display: block; font-size: 0; content: ".";  clear: both; height: 0
-		} 
-		.imgFileUploade .imgAll li{
-			width: 5rem;height: 5rem;border:solid 1px #ccc;margin:8px 5px;float: left;position: relative;box-shadow: 0 0 10px #eee;
-		}
-		.imgFileUploade .imgAll li img{
-			position: absolute;top:0;left:0;width: 100%;height: 100%;display: block;
-		}
-		.delImg{
-			position: absolute;top:-10px;right:-7px;width: 22px;height: 22px;background: #000;border-radius: 50%;display: block;text-align:  center;line-height: 22px;color:#fff;font-weight: 700;font-style:normal;cursor: pointer;
-		}
-	</style>
 			<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <script>
     			$(function(){
@@ -170,35 +120,6 @@
 			<div class="title">自由发布</div>
 			<div class="public-header-right"></div>
 		</div>
-		<style>
-			body{ background-color: #fff!important; font-size: 1rem;}
-			form{ width: 92%; margin: 4%; overflow: hidden; font-size: 1rem;}
-			.ping{ width: 100%; overflow: hidden;  border-bottom: 1px solid #EBEBEB; padding: 0.4rem 0;}
-			.riqili input{ display: none;}
-			.pingjia{ float: left; height: 1.4rem; line-height: 1.4rem; color: #494949; width: 26%;}
-			.riqibox{ float: left; overflow: hidden; height: 1.4rem; line-height: 1.4rem; width: 74%; }
-			.riqibox input{ width: 100%; display: inline-block;  border: none;}
-			.neirong{ width: 100%; overflow: hidden; margin-bottom: 1rem;}
-			.neirong label{ width: 100%; float: left; color: #494949; margin-bottom: 0.6rem;}
-			.neirong textarea{ width: 100%; float: left; height: 12rem; border: none;}
-			.sma{ font-size: 0.8rem;}
-			.mdui-select{ width: 100%!important;   background-position:center right !important;}
-			.mdui-select-selected{ text-align: left!important;}
-			.mdui-select-menu-item[selected]{color: #012AC9!important;}
-			.mdui-ripple{ float: left!important; width: 80%!important;}
-			.mdui-panel-item-header{ width: 100%!important; margin: 0; padding: 0!important;}
-			.mdui-panel-item-arrow{ right: 0!important;}
-			.mdui-panel-item-body{ padding: 0!important;}
-			.mdui-panel-item{border-bottom: 1px solid #E2E2E2!important; font-size: 1rem!important; box-shadow:none!important;-webkit-box-shadow:none!important;}
-			.mdui-panel-item-body p{ height: 48px; line-height: 48px;}
-			.mdui-panel-item-title{ width: 80%!important; font-size: 1rem!important;}
-			.shuzi{ margin-left: 0.4rem; color: #0067C5; font-size: 0.8rem;}
-			.zhankai{ width: 100%; overflow: hidden; border-bottom: 1px solid #E2E2E2;}
-			.zhankai2{ width: 80%; overflow: hidden; border-bottom: 1px solid #E2E2E2; padding: 0 10%;}
-			.pLeft{ width: 50%; float: left;}
-			.pRight{ width: 50%; float: left; text-align: right; color: #f00;}
-			.kejian{height: 36px; line-height: 36px; float: left; padding-left: 1.2rem; color: #8F8F8F;}
-		</style>
 		<div class="content">
 			<form>
 				<div class="ping">
@@ -373,14 +294,6 @@
 				<button style="background-color: #019FE8; padding:0.3rem 0; border: none; color: #004090; border-radius: 0.4rem; font-size: 1rem;width: 5rem; margin: 0 1rem;">发布</button>
 			</div>
 			</form>
-			<style>
-				#half{width: 100%;height:100%;background-color: #D9D9D9;opacity:0.5;position: absolute;opacity: 0.5;filter: alpha(opacity=50);-moz-opacity: 0.5;z-index: 111; top: 0; left: 0;}
-				#tanchuang{position: fixed; bottom: 1rem; right: 1rem; width: 30%; z-index: 95;}
-				.tanBig{width: 100%;}
-				.zhi{color: #fff; position: absolute; top: 0.1rem; right:0.1rem;}
-				#tanchuang2{position: fixed; top:25%; right: 25%; width: 50%; z-index:121;}
-				.zhi2{color: #fff; position: absolute; top: 0.1rem; right:0.1rem;}
-			</style>
 			<div id="half"></div>
 			<!--<div id="tanchuang">
 				<a href="#"><img src="image/tanchuang.png"   class="tanBig"/></a>
